@@ -1,0 +1,32 @@
+<html>
+<head>
+
+<title>A1 - COUNT NO. OF ELEMENTS</title>
+<script type="text/javascript">
+
+function count(){
+alert("No. of elements on the form: "+document.myForm.length);
+}
+</script>
+</head>
+
+<body>
+
+<form name="myForm">
+
+<label>Book ID</label>
+<input type="text"></br>
+<label>Book Name </label>
+<input type="text"></br>
+<label>Book Price</label>
+<input type="text" ></br>
+<label>Type of Book</label>
+<input type="radio" name="g">Fiction
+<input type="radio" name="g">Non Fiction<br>
+<label>Quality</label>
+<input type="text"></br>
+<input type="button" value="Counts" onclick="count();">
+
+</form>
+
+</body> </html>
