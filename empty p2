@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>A2 - FIND EMPTY TEXTBOXES</title>
+<script type="text/javascript">
+
+function check(){
+
+var arr=new Array();
+for(var i=0;i<document.form1.length-1;i++)
+if(document.form1.elements[i].value.length==0)
+arr.push(document.form1.elements[i].name);
+
+
+if(arr.length!=0)
+alert("Kindly fill the empty fields\n"+arr);
+
+}
+
+</script>
+</head>
+
+<body>
+<h1 align="center">EMPLOYEE DETAILS</h1>
+<form name="form1" onsubmit="check();" >
+Employee ID : <input type="text" name="ID"/><br/><br/>
+Employee Name : <input type="text" name= "EmpName"/><br/><br/>
+Employee Dept : <input type="text" name="Dept"/><br/><br/>
+Employee Salary : <input type="text" name="Salary"/><br/><br/>
+<input type="submit" value="Check Empty Boxes" onsubmit="check();"/>
+</form>
+</body>
+</html>
