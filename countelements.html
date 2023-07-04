@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!doctype html Public "-//w3c//dtd xhtml 1.0 transitional//en"
+"http://www.w3.org/tr/xhtml1/dtd/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>A1 - COUNT NO. OF ELEMENTS</title>
+<script type="text/javascript">
+function count()
+{
+alert("No. of elements on the form : "+document.myForm.length);
+}
+</script></head>
+<body>
+<form name="myForm">
+<label>Book Id <input type="text" /></label></br>
+<label>Book Name <input type="text" /></label></br>
+<label>Book Price <input type="text" /></label></br>
+Type of Book <input type="radio" value="Fiction" />Fiction
+<input type="radio" value="NonFiction"/>Non Fiction</br>
+<label>quantity<input type="text"/> </label></br>
+<label><input type="button" value="Count" onclick="count();"/>
+</form>
+</body>
+</html>

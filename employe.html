@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "_//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>7th lab</title>
+<script type="text/javascript">
+function sal()
+{
+var empn=document.getElementById("empname").value;
+var empno=document.getElementById("empid").value;
+var bas=parseInt(document.getElementById("basic").value);
+var hra=bas*0.40;
+
+var da=bas*0.60;
+var gross=bas+hra+da;
+var pf=gross*0.13;
+var tax=gross*0.2;
+var deduct=pf+tax;
+var net=gross-deduct;
+document.write("<table border='5' align='center'>");
+document.write("<tr><th colspan='2'>Salary Details</th></tr>");
+document.write("<tr><td>Emp Name</td><td>"+empn+"</td></tr>");
+document.write("<tr><td>Emp ID</td><td>"+empno+"</td></tr>");
+document.write("<tr><td>Basic Salary</td><td>"+bas+"</td></tr>");
+document.write("<tr><td>HRA</td><td>"+hra.toFixed(2)+"</td></tr>");
+document.write("<tr><td>DA</td><td>"+da.toFixed(2)+"</td></tr>");
+document.write("<tr><td>GROSS</td><td>"+gross.toFixed(2)+"</td></tr>");
+document.write("<tr><td>PF</td><td>"+pf.toFixed(2)+"</td></tr>");
+document.write("<tr><td>TAX</td><td>"+tax.toFixed(2)+"</td></tr>");
+document.write("<tr><td>TOTAL DEDUCTIONS</td><td>"+deduct.toFixed(2)+"</td></tr>");
+
+document.write("<tr><td><b>NETSALARY</b></td><td><b>"+net.toFixed(2)+"</b></td></tr>");
+document.write("</table>");
+}
+</script>
+</head>
+<body>
+<form>
+<table border="5">
+<tr><th colspan="2" align="center">Employee Details</th></tr>
+<tr>
+<td>Emp name</td>
+<td><input type="text" id="empname" /></td>
+</tr>
+<tr>
+<td>Emp id:</td>
+<td><input type="text" id="empid" /></td>
+</tr>
+<tr>
+<td>Basic:</td>
+<td><input type="text" id="basic" /></td>
+</tr>
+<tr align="center"><td colspan="2">
+
+<input type="button" value="Salary Details" onclick="sal()" />
+</td></tr>
+</table>
+</form>
+</body>
+</html>

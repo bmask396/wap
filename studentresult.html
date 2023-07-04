@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC ".//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+xml:lang="en"lang="en">
+<head>
+<title>6th lab</title>
+<script type="text/javascript">
+function disres()
+{
+
+var m1=document.getElementById("Mark1").value;
+var m2=document.getElementById("Mark2").value;
+
+var m3=document.getElementById("Mark3").value;
+var tot=parseInt(m1)+parseInt(m2)+parseInt(m3);
+var avg=tot/3;
+
+if(avg>=80)
+{
+grade="A";
+result="Distinction";
+}
+else if(avg>=60)
+{
+grade="B";
+result="First";
+}
+else if(avg>=50)
+{
+grade="C";
+result="Second";
+}
+else
+{
+grade="F";
+result="Fail";
+}
+
+document.getElementById("tot").value=tot;
+document.getElementById("avg").value=avg;
+document.getElementById("result").value=result;
+document.getElementById("grade").value=grade;
+}
+</script>
+</head>
+<body>
+<form>
+<table border="5" align="center">
+<tr>
+<td>NAME</td>
+<td><input type="text" id="name" /></td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td><input type="text" id="class" /></td>
+</tr>
+<tr>
+<td>SUBJECT 1 MARKS</td>
+<td><input type="text" id="Mark1" /></td>
+</tr>
+<tr>
+<td>SUBJECT 2 MARKS</td>
+
+<td><input type="text" id="Mark2" /></td>
+</tr>
+<tr>
+<td>SUBJECT 3 MARKS</td>
+<td><input type="text" id="Mark3" /></td>
+</tr>
+<tr>
+<td colspan=2 align="center">
+<input type="button" value="SUBMIT" onclick="disres();" />
+</td>
+</tr>
+<tr>
+<td>TOTAL</td>
+<td><input type="text" id="tot"/></td>
+</tr>
+<tr>
+<td>RESULT</td>
+<td><input type="text" id="result"/></td>
+</tr>
+<tr>
+<td>AVERAGE</td>
+<td><input type="text" id="avg"/></td>
+</tr>
+<tr>
+
+<td>GRADE</td>
+<td><input type="text" id="grade"/></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
