@@ -1,0 +1,17 @@
+<html>
+<head>
+<script type="text/javascript">
+function mouseover()
+{
+document.getElementById("img").src = "9.jpeg";
+}
+function mouseout()
+{
+document.getElementById("img").src = "10.jpeg";
+}
+</script>
+</head>
+<body>
+<img src= "10.jpeg" id = "img" onmouseout="mouseout()" onmouseover="mouseover()" />
+</body>
+</html>
