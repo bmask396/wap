@@ -1,0 +1,25 @@
+<html>
+
+<head>
+
+<title>A3 EVALUATE AN EXPRESSION</title> <script type="text/javascript">
+
+function calculate()
+{
+var input;
+input=document.getElementById("inputexpr").value;
+document.getElementById("outputexpr").value=eval(input);
+}
+</script>
+</head>
+<body>
+<h1 align="center">Evaluate Expression</h1>
+<h1>
+<form>
+Enter a valid expression: <input type="text" id="inputexpr" /><br/><br/>
+<input type="button" value="Click here to evaluate" onclick="calculate();" /><br/><br/>
+Result of expression: <input type="text" id="outputexpr" />
+</h1>
+</form>
+</body>
+</html>
